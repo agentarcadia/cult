@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background-color: #1e1e1e;
+}
+
+#sparkle-container {
+    position: absolute;
+    pointer-events: none;
+}
+
+.sparkle {
+    position: absolute;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    animation: sparkleAnimation 1s ease-out forwards;
+}
+
+@keyframes sparkleAnimation {
+    0% {
+        transform: scale(1) translateX(0) translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0) translateX(50px) translateY(50px);
+        opacity: 0;
+    }
+}

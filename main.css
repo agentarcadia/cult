@@ -1,0 +1,87 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+h3{
+    color: beige;
+    font-size: 25px;
+}
+
+a{
+    color: red;
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(221, 93, 99);
+}
+p{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.link{
+    color: red;
+}
+.agent{
+    color: red;
+}
+.password{
+    color: red;
+    size: 50px;
+}
+
+input{
+    color: red;
+}
+
+.text{
+    padding: 0 20px;
+}
+
+.staff{
+    color: red;
+    font-size: 20;
+    padding: 0 20px;
+}
+button{
+    color: black;
+    background-color: whitesmoke;
+    font-weight: 500;
+}
+button:hover{
+    color: black;
+    background-color: red;
+}
+
+.text{
+    font-size: 20px;
+    color: red;
+}
+
+@media (min-aspect-ratio:16/9){
+    .video-background{
+        width: 100%;
+        height: auto;
+    }
+    
+}
+@media (max-aspect-ratio:16/9){
+    .video-background{
+        width: auto;
+        height: 100%;
+    }
+    }
+
